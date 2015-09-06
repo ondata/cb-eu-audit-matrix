@@ -82,7 +82,8 @@ window.onload=function(){
   });
 
   var load_all = function(){
-    d3.csv(d3.select("input#file_path")[0][0].value, function(data){
+    d3.tsv(d3.select("input#file_path")[0][0].value, function(data){
+    //d3.csv(d3.select("input#file_path")[0][0].value, function(data){
       // I de-dictionatize d3 stuff
       // as of now assumes both columns and row labels
       var label_col_full = Object.keys(data[0]);
@@ -93,7 +94,8 @@ window.onload=function(){
         label_row.push(data[i][label_col_full[0]]);
         row = [];
         for(var j = 1; j < label_col_full.length; j++){
-          row.push(parseFloat(data[i][label_col_full[j]]));
+          row.push(data[i][label_col_full[j]]);
+          //row.push(parseFloat(data[i][label_col_full[j]]));
         }
         rows.push(row);
       }
@@ -166,9 +168,15 @@ var main = function(corr, label_col, label_row){
   var order_col = d3.range(label_col.length + 1);
   var order_row = d3.range(label_row.length + 1);
 
+  /*
   var color = d3.scale.linear()
       .domain([-1,0,1])
       .range(['blue','white','red']);
+  */
+
+  var color = d3.scale.ordinal()
+      .domain(["N","N.A.","Y"])
+      .range(['red','white','green']);
 
   var scale = d3.scale.linear()
       .domain([0, d3.min([50, d3.max([label_col.length, label_row.length, 4])])])
@@ -244,8 +252,8 @@ var main = function(corr, label_col, label_row){
           .attr('font-size', scale(0.8))
           .text(function(d){ return d; })
           .on('mouseover', function(d, i){tick_mouseover(d, i, col[i], label_row);})
-          .on('mouseout', function(d){mouseout(d);})
-          .on('click', function(d, i){reorder_matrix(i, 'col');});
+          .on('mouseout', function(d){mouseout(d);});
+          //.on('click', function(d, i){reorder_matrix(i, 'col');});
 
   tick_row = svg.append('g')
       .attr('class','ticks')
@@ -260,14 +268,15 @@ var main = function(corr, label_col, label_row){
           .attr('font-size', scale(0.8))
           .text(function(d){ return d; })
           .on('mouseover', function(d, i){tick_mouseover(d, i, row[i], label_col);})
-          .on('mouseout', function(d){mouseout(d);})
-          .on('click', function(d, i){reorder_matrix(i, 'row');});
+          .on('mouseout', function(d){mouseout(d);});
+          //.on('click', function(d, i){reorder_matrix(i, 'row');});
 
   var pixel_mouseover = function(d){
     tooltip.style("opacity", 0.8)
       .style("left", (d3.event.pageX + 15) + "px")
       .style("top", (d3.event.pageY + 8) + "px")
-      .html(d.i + ": " + label_row[d.i] + "<br>" + d.j + ": " + label_col[d.j] + "<br>" + "Value: " + (d.val > 0 ? "+" : "&nbsp;") + d.val.toFixed(3));
+      .html(d.i + ": " + label_row[d.i] + "<br>" + d.j + ": " + label_col[d.j] + "<br>" + "Value: " + d.val);
+      //.html(d.i + ": " + label_row[d.i] + "<br>" + d.j + ": " + label_col[d.j] + "<br>" + "Value: " + (d.val > 0 ? "+" : "&nbsp;") + d.val.toFixed(3));
   };
 
   var mouseout = function(d){
@@ -281,7 +290,8 @@ var main = function(corr, label_col, label_row){
     indices.sort(function(a, b){ return Math.abs(vec[b]) - Math.abs(vec[a]); });
     res_list = [];
     for(var j = 0; j < Math.min(vec.length, 10); j++) {
-      res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + vec[indices[j]].toFixed(3) + "&nbsp;&nbsp;&nbsp;" + label[indices[j]]);
+      res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + vec[indices[j]] + "&nbsp;&nbsp;&nbsp;" + label[indices[j]]);
+      //res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + vec[indices[j]].toFixed(3) + "&nbsp;&nbsp;&nbsp;" + label[indices[j]]);
     }
     tooltip.style("opacity", 0.8)
       .style("left", (d3.event.pageX + 15) + "px")
