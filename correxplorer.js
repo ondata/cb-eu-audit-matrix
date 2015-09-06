@@ -118,14 +118,15 @@ var main = function(corr, label_col, label_row){
 
   var transition_time = 1500;
 
-  var body = d3.select('body');
+  var body = d3.select('body'),
+      container = body.select("#viz_container");
 
   var tooltip = body.select('div.tooltip');
 //    .style("opacity", 1e-6);
 
-  var svg = body.append('svg')
-    .attr('width', 3000)
-    .attr('height', 3000);
+  var svg = container.append('svg')
+    .attr('width', 700)
+    .attr('height', 1000);
 
   // Autodetect symmetric tables
   d3.select("input#keep_symmetry")
@@ -190,7 +191,7 @@ var main = function(corr, label_col, label_row){
     tick_col.transition()
         .duration(transition_time)
           .attr('font-size', scale(0.8))
-          .attr('transform', function(d, i){return 'rotate(270 ' + scale(order_col[i] + 0.7) + ',0)';})
+          .attr('transform', function(d, i){return 'rotate(-45 ' + scale(order_col[i] + 0.7) + ',0)';})
           .attr('x', function(d, i){return scale(order_col[i] + 0.7);});
 
     tick_row.transition()
@@ -217,12 +218,13 @@ var main = function(corr, label_col, label_row){
 
   });
 
-  var label_space = 225;
+  var label_space_x = 125,
+      label_space_y = 350;
   // I will make it also a function of scale and max label length
 
   var matrix = svg.append('g')
       .attr('class','matrix')
-      .attr('transform', 'translate(' + (label_space + 10) + ',' + (label_space + 10) + ')');
+      .attr('transform', 'translate(' + (label_space_x + 10) + ',' + (label_space_y + 10) + ')');
 
   var pixel = matrix.selectAll('rect.pixel').data(corr_data);
 
@@ -240,7 +242,7 @@ var main = function(corr, label_col, label_row){
 
   tick_col = svg.append('g')
       .attr('class','ticks')
-      .attr('transform', 'translate(' + (label_space + 10) + ',' + (label_space) + ')')
+      .attr('transform', 'translate(' + (label_space_x + 10) + ',' + (label_space_y) + ')')
       .selectAll('text.tick')
       .data(label_col);
 
@@ -248,7 +250,7 @@ var main = function(corr, label_col, label_row){
       .append('text')
           .attr('class','tick')
           .style('text-anchor', 'start')
-          .attr('transform', function(d, i){return 'rotate(270 ' + scale(order_col[i] + 0.7) + ',0)';})
+          .attr('transform', function(d, i){return 'rotate(-45 ' + scale(order_col[i] + 0.7) + ',0)';})
           .attr('font-size', scale(0.8))
           .text(function(d){ return d; })
           .on('mouseover', function(d, i){tick_mouseover(d, i, col[i], label_row);})
@@ -257,7 +259,7 @@ var main = function(corr, label_col, label_row){
 
   tick_row = svg.append('g')
       .attr('class','ticks')
-      .attr('transform', 'translate(' + (label_space) + ',' + (label_space + 10) + ')')
+      .attr('transform', 'translate(' + (label_space_x) + ',' + (label_space_y + 10) + ')')
       .selectAll('text.tick')
       .data(label_row);
 
@@ -303,7 +305,7 @@ var main = function(corr, label_col, label_row){
   var refresh_order = function(){
       tick_col.transition()
           .duration(transition_time)
-              .attr('transform', function(d, i){return 'rotate(270 ' + scale(order_col[i] + 0.7) + ',0)';})
+              .attr('transform', function(d, i){return 'rotate(-45 ' + scale(order_col[i] + 0.7) + ',0)';})
               .attr('x', function(d, i){return scale(order_col[i] + 0.7);});
 
       tick_row.transition()
