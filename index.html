@@ -15,8 +15,14 @@
   <style>
     #simmetry_control,
     #zoom_control,
-    #sort_control {
+    #sort_control,
+    #transpose_control,
+    #file_control,
+    #file_load {
       display: none;
+    }
+    #footer {
+      font-size: smaller;
     }
   </style>
 </head>
@@ -28,8 +34,7 @@
   <div id="viz_container"></div>
   <p>
 
-    <label for="file_path">Data source:</label> 
-    <input type="text" value="cb-eu-audit-data.tsv" id="file_path" disabled>
+    <span id="file_control"><label for="file_path">Data source:</label> <input type="text" value="cb-eu-audit-data.tsv" id="file_path" disabled></span>
 
     <span id="transpose_control"><label for="transpose">Transpose?</label> <input type="checkbox" id="transpose"></span>
 
@@ -52,6 +57,13 @@
 
   </p>
   <div class="tooltip" style="opacity: 0.01"></div>
+  <p id="footer">
+    CC-BY <a href="http://www.confiscatibene.it" target="_blank">Confiscati Bene</a>, 
+    powered by <a href="https://github.com/ondata" target="_blank">Ondata</a>, 
+    developed by <a href="http://www.dataninja.it" target="_blank">Dataninja</a>, 
+    based on <a href="https://github.com/CompassInc/correlation-explorer" target="_blank">Compass' correlation explorer tool</a>,
+    source on <a href="https://github.com/ondata/cb-eu-audit-matrix" target="_blank">Github</a>.
+  </p>
 
   <!-- <p>Built with <a href="http://d3js.org/">d3.js</a>.</p> -->
   
