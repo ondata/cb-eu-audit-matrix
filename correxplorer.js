@@ -113,7 +113,6 @@ window.onload=function(){
 
 };
 
-
 var main = function(corr, label_col, label_row){
 
   var transition_time = 1500;
@@ -177,7 +176,7 @@ var main = function(corr, label_col, label_row){
 
   var color = d3.scale.ordinal()
       .domain(["N","N.A.","Y"])
-      .range(['red','white','green']);
+      .range(['#ef8a62','#f7f7f7','#67a9cf']);
 
   var scale = d3.scale.linear()
       .domain([0, d3.min([50, d3.max([label_col.length, label_row.length, 4])])])
