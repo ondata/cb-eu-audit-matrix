@@ -1,29 +1,29 @@
-country	Is there a law on confiscation?	Is there a law on Management of seized assets?	Confiscation based on criminal conviction	Confiscation without criminal conviction	Adhesion to the European directive 2006?	Centralised approach with specialised institution	Centralised approach with non-specialised institutions	Decentralised approach	Direct re-use for social purposes	Re-use of proceeds for social purposes through funds and programs
-Austria	Y	Y	Y	N	Y	N.A.	N.A.	N.A.	N.A.	N.A.
+country	Law	Management	Conviction based	Non-conviction based	Mutual recognition	Specialised agency	Non-specialised agency	Decentralised approach	Direct social re-use	Re-use of proceeds
+Austria	Y	Y	Y	N	Y	NA	NA	NA	NA	NA
 Belgium	Y	Y	Y	N	Y	N	Y	N	Y	N
-Bulgaria	Y	Y	Y	Y	Y	N	Y	N	N.A.	N.A.
-Croatia	Y	N.A.	Y	N	Y	N.A.	N.A.	N.A.	N.A.	N.A.
-Cyprus	Y	Y	Y	Y	Y	Y	N	N	N.A.	N.A.
+Bulgaria	Y	Y	Y	Y	Y	N	Y	N	NA	NA
+Croatia	Y	NA	Y	N	Y	NA	NA	NA	NA	NA
+Cyprus	Y	Y	Y	Y	Y	Y	N	N	NA	NA
 Czech Republic	Y	Y	Y	N	Y	N	Y	N	Y	N
-Denmark	Y	N	Y	N	Y	N	N	Y	N.A.	N.A.
+Denmark	Y	N	Y	N	Y	N	N	Y	NA	NA
 Estonia	Y	Y	Y	N	N	N	N	Y	Y	N
-Finland	Y	Y	Y	N	Y	N	Y	N	N.A.	N.A.
+Finland	Y	Y	Y	N	Y	N	Y	N	NA	NA
 France	Y	Y	Y	N	Y	Y	N	N	N	Y
 Germany	Y	Y	Y	N	Y	N	N	Y	Y	N
 Greece	Y	Y	Y	Y	N	N	N	Y	Y	N
 Hungary	Y	Y	Y	Y	Y	N	N	Y	Y	N
-Ireland	Y	Y	Y	Y	N	N	N	Y	N.A.	N.A.
+Ireland	Y	Y	Y	Y	N	N	N	Y	NA	NA
 Italy	Y	Y	Y	Y	Y	Y	N	N	Y	N
-Latvia	Y	N.A.	Y	N	Y	N	N	N	N.A.	N.A.
-Lithuania	Y	N	Y	N	Y	N	N	Y	N.A.	N.A.
+Latvia	Y	NA	Y	N	Y	N	N	N	NA	NA
+Lithuania	Y	N	Y	N	Y	N	N	Y	NA	NA
 Luxembourg	Y	N	Y	N	N	N	Y	N	N	Y
-Malta	Y	N	Y	N	Y	N	Y	N	N.A.	N.A.
-Netherlands	Y	Y	Y	N	Y	N	Y	N	N.A.	N.A.
-Poland	Y	Y	Y	N	Y	N	N	Y	N.A.	N.A.
+Malta	Y	N	Y	N	Y	N	Y	N	NA	NA
+Netherlands	Y	Y	Y	N	Y	N	Y	N	NA	NA
+Poland	Y	Y	Y	N	Y	N	N	Y	NA	NA
 Portugal	Y	Y	Y	Y	Y	N	N	Y	Y	N
 Romania	Y	Y	Y	Y	Y	N	Y	N	Y	N
 Slovakia	Y	Y	Y	N	N	N	N	Y	Y	N
 Slovenia	Y	Y	Y	Y	Y	N	N	Y	Y	N
 Spain	Y	Y	Y	N	Y	N	N	Y	N	Y
-Sweden	Y	Y	Y	N	Y	N.A.	N.A.	N.A.	Y	N
+Sweden	Y	Y	Y	N	Y	NA	NA	NA	Y	N
 United Kingdom	Y	Y	Y	Y	N	N	N	Y	N	Y

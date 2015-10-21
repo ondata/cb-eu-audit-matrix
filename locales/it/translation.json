@@ -1,0 +1,89 @@
+{
+  "header": {
+    "title": "Confiscati Bene UE - Matrice dell'audit"
+  },
+  "questions": {
+    "Law": {
+      "long": "C'è una legge sulle confische?",
+      "short": "Legge sulle confische"
+    },
+    "Management": {
+      "long": "C'è una legge sulla gestione dei beni confiscati?",
+      "short": "Gestione dei beni"
+    },
+    "Conviction based": {
+      "long": "Confisca basata solo su una condanna definitiva",
+      "short": "Confisca con condanna"
+    },
+    "Non-conviction based": {
+      "long": "Confisca possibile anche in assenza di condanna",
+      "short": "Confisca senza condanna"
+    },
+    "Mutual recognition": {
+      "long": "Attuazione della Decisione Quadro 2006 sul mutuo riconoscimento di ordini di confisca",
+      "short": "Decisione Quadro 2006"
+    },
+    "Specialised agency": {
+      "long": "Approccio centralizzato con un'istituzione dedicata",
+      "short": "Agenzia specializzata"
+    },
+    "Non-specialised agency": {
+      "long": "Approccio centralizzato senza un'istituzione dedicata",
+      "short": "Agenzia non specializzata"
+    },
+    "Decentralised approach": {
+      "long": "Approccio decentralizzato",
+      "short": "Approccio decentralizzato"
+    },
+    "Direct social re-use": {
+      "long": "Riutilizzo diretto per scopi sociali",
+      "short": "Riuso sociale diretto"
+    },
+    "Re-use of proceeds": {
+      "long": "Riuso dei beni per scopi sociali attraverso bandi e programmi di finanziamento",
+      "short": "Utilizzo dei proventi"
+    }
+  },
+  "answers": {
+    "Y": "Sì",
+    "N": "No",
+    "NA": "Non Disponibile"
+  },
+  "footer": {
+    "cc": "CC-BY",
+    "powered": "powered by",
+    "developed": "developed by",
+    "based": "based on",
+    "source": "source on"
+  },
+  "countries": {
+    "Austria": "Austria",
+    "Belgium": "Belgio",
+    "Bulgaria": "Bulgaria",
+    "Croatia": "Croazia",
+    "Cyprus": "Cipro",
+    "Czech Republic": "Repubblica Ceca",
+    "Denmark": "Danimarca",
+    "Estonia": "Estonia",
+    "Finland": "Finlandia",
+    "France": "Francia",
+    "Germany": "Germania",
+    "Greece": "Grecia",
+    "Hungary": "Ungheria",
+    "Ireland": "Irlanda",
+    "Italy": "Italia",
+    "Latvia": "Lettonia",
+    "Lithuania": "Lituania",
+    "Luxembourg": "Lussemburgo",
+    "Malta": "Malta",
+    "Netherlands": "Olanda",
+    "Poland": "Polonia",
+    "Portugal": "Portogallo",
+    "Romania": "Romania",
+    "Slovakia": "Slovacchia",
+    "Slovenia": "Slovenia",
+    "Spain": "Spagna",
+    "Sweden": "Svezia",
+    "United Kingdom": "Regno Unito"
+  }
+}

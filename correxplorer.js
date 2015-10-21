@@ -71,6 +71,12 @@ var js_comparison_table = function () {
 
 window.onload=function(){
 
+  i18n.init(function(e,t) {
+    d3.selectAll("[data-i18n]").text(function() {
+      return t(d3.select(this).attr("data-i18n"));
+    });
+  });
+
   d3.select("button#file_load").on("click", function() {
       load_all();
   });
@@ -90,6 +96,21 @@ window.onload=function(){
       var label_row = [];
       var rows = [];
       var row = [];
+      data.sort(function(a,b) {
+        var ay = 0,
+            by = 0;
+        for (var k in a) {
+          if (a.hasOwnProperty(k)) {
+            if (a[k] != "Countries" && a[k] === "Y") ay++;
+          }
+        }
+        for (var k in b) {
+          if (b.hasOwnProperty(k)) {
+            if (b[k] != "Countries" && b[k] === "Y") by++;
+          }
+        }
+        return d3.descending(ay,by);
+      });
       for(var i = 0; i < data.length; i++){
         label_row.push(data[i][label_col_full[0]]);
         row = [];
@@ -115,7 +136,7 @@ window.onload=function(){
 
 var main = function(corr, label_col, label_row){
 
-  var transition_time = 1500;
+  var transition_time = 0;
 
   var body = d3.select('body'),
       container = body.select("#viz_container");
@@ -125,7 +146,7 @@ var main = function(corr, label_col, label_row){
 
   var svg = container.append('svg')
     .attr('width', 700)
-    .attr('height', 1000);
+    .attr('height', 800);
 
   // Autodetect symmetric tables
   d3.select("input#keep_symmetry")
@@ -175,7 +196,7 @@ var main = function(corr, label_col, label_row){
   */
 
   var color = d3.scale.ordinal()
-      .domain(["N","N.A.","Y"])
+      .domain(["N","NA","Y"])
       .range(['#ef8a62','#f7f7f7','#67a9cf']);
 
   var scale = d3.scale.linear()
@@ -200,10 +221,10 @@ var main = function(corr, label_col, label_row){
 
     pixel.transition()
         .duration(transition_time)
-          .attr('width', scale(0.9))
+          .attr('width', scale(0.9)*2)
           .attr('height', scale(0.9))
           .attr('y', function(d){return scale(order_row[d.i]);})
-          .attr('x', function(d){return scale(order_col[d.j]);});
+          .attr('x', function(d){return scale(order_col[d.j])*2;});
 
     // the below does not work, as 
     // refresh_order();
@@ -218,7 +239,7 @@ var main = function(corr, label_col, label_row){
   });
 
   var label_space_x = 125,
-      label_space_y = 350;
+      label_space_y = 150;
   // I will make it also a function of scale and max label length
 
   var matrix = svg.append('g')
@@ -231,7 +252,7 @@ var main = function(corr, label_col, label_row){
   pixel.enter()
       .append('rect')
           .attr('class', 'pixel')
-          .attr('width', scale(0.9))
+          .attr('width', scale(0.9)*2)
           .attr('height', scale(0.9))
           .style('fill',function(d){ return color(d.val);})
           .on('mouseover', function(d){pixel_mouseover(d);})
@@ -241,7 +262,7 @@ var main = function(corr, label_col, label_row){
 
   tick_col = svg.append('g')
       .attr('class','ticks')
-      .attr('transform', 'translate(' + (label_space_x + 10) + ',' + (label_space_y) + ')')
+      .attr('transform', 'translate(' + (label_space_x) + ',' + (label_space_y) + ')')
       .selectAll('text.tick')
       .data(label_col);
 
@@ -249,10 +270,10 @@ var main = function(corr, label_col, label_row){
       .append('text')
           .attr('class','tick')
           .style('text-anchor', 'start')
-          .attr('transform', function(d, i){return 'rotate(-45 ' + scale(order_col[i] + 0.7) + ',0)';})
+          .attr('transform', function(d, i){return 'rotate(-35 ' + scale(order_col[i] + 0.7)*2 + ',0)';})
           .attr('font-size', scale(0.8))
-          .text(function(d){ return d; })
-          .on('mouseover', function(d, i){tick_mouseover(d, i, col[i], label_row);})
+          .text(function(d){ return i18n.t("questions."+d+".short"); })
+          .on('mouseover', function(d, i){tick_mouseover(d, i, col[i], label_row, "col");})
           .on('mouseout', function(d){mouseout(d);});
           //.on('click', function(d, i){reorder_matrix(i, 'col');});
 
@@ -267,8 +288,8 @@ var main = function(corr, label_col, label_row){
           .attr('class','tick')
           .style('text-anchor', 'end')
           .attr('font-size', scale(0.8))
-          .text(function(d){ return d; })
-          .on('mouseover', function(d, i){tick_mouseover(d, i, row[i], label_col);})
+          .text(function(d){ return i18n.t("countries."+d); })
+          .on('mouseover', function(d, i){tick_mouseover(d, i, row[i], label_col, "row");})
           .on('mouseout', function(d){mouseout(d);});
           //.on('click', function(d, i){reorder_matrix(i, 'row');});
 
@@ -276,7 +297,10 @@ var main = function(corr, label_col, label_row){
     tooltip.style("opacity", 0.8)
       .style("left", (d3.event.pageX + 15) + "px")
       .style("top", (d3.event.pageY + 8) + "px")
-      .html(d.i + ": " + label_row[d.i] + "<br>" + d.j + ": " + label_col[d.j] + "<br>" + "Value: " + d.val);
+      .html(
+        "<h2>"+i18n.t("countries."+label_row[d.i]) + "</h2>" + 
+        "<p>"+i18n.t("questions."+label_col[d.j]+".long") + " " + "<b>"+i18n.t("answers."+d.val)+"</b></p>"
+      );
       //.html(d.i + ": " + label_row[d.i] + "<br>" + d.j + ": " + label_col[d.j] + "<br>" + "Value: " + (d.val > 0 ? "+" : "&nbsp;") + d.val.toFixed(3));
   };
 
@@ -284,28 +308,35 @@ var main = function(corr, label_col, label_row){
     tooltip.style("opacity", 1e-6);
   };
 
-  var tick_mouseover = function(d, i, vec, label){
+  var tick_mouseover = function(d, i, vec, label, type){
     // below can be optimezed a lot
     var indices = d3.range(vec.length);
     // also value/abs val?
     indices.sort(function(a, b){ return Math.abs(vec[b]) - Math.abs(vec[a]); });
     res_list = [];
     for(var j = 0; j < Math.min(vec.length, 10); j++) {
-      res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + vec[indices[j]] + "&nbsp;&nbsp;&nbsp;" + label[indices[j]]);
+      if (type === "row") {
+        res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + i18n.t("questions."+label[indices[j]]+".long") + "&nbsp;&nbsp;&nbsp;<b>" + i18n.t("answers."+vec[indices[j]])+"</b>");
+      } else {
+        res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + i18n.t("countries."+label[indices[j]]) + "&nbsp;&nbsp;&nbsp;<b>" + i18n.t("answers."+vec[indices[j]])+"</b>");
+      }
       //res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + vec[indices[j]].toFixed(3) + "&nbsp;&nbsp;&nbsp;" + label[indices[j]]);
     }
     tooltip.style("opacity", 0.8)
       .style("left", (d3.event.pageX + 15) + "px")
       .style("top", (d3.event.pageY + 8) + "px")
-      .html("" + i + ": " + d + "<br><br>" + res_list.join("<br>"));
+      .html(
+        "<h2>"+(type === "row" ? i18n.t("countries."+d) : i18n.t("questions."+d+".long"))+"</h2>" + 
+        "<p>" + res_list.join("<br>") + "</p>"
+      );
   };
 
 
   var refresh_order = function(){
       tick_col.transition()
           .duration(transition_time)
-              .attr('transform', function(d, i){return 'rotate(-45 ' + scale(order_col[i] + 0.7) + ',0)';})
-              .attr('x', function(d, i){return scale(order_col[i] + 0.7);});
+              .attr('transform', function(d, i){return 'rotate(-35 ' + scale(order_col[i] + 0.7)*2 + ',0)';})
+              .attr('x', function(d, i){return scale(order_col[i] + 0.7)*2;});
 
       tick_row.transition()
           .duration(transition_time)
@@ -314,7 +345,7 @@ var main = function(corr, label_col, label_row){
       pixel.transition()
           .duration(transition_time)
               .attr('y', function(d){return scale(order_row[d.i]);})
-              .attr('x', function(d){return scale(order_col[d.j]);});
+              .attr('x', function(d){return scale(order_col[d.j])*2;});
   };
 
   refresh_order();

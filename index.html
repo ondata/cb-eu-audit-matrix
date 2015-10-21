@@ -9,6 +9,7 @@
   <title>Confiscati Bene EU - Audit matrix</title>
   
   <script type='text/javascript' src='d3.min.js'></script>
+  <script type='text/javascript' src='i18next.min.js'></script>
   <script type='text/javascript' src="correxplorer.js"></script>
   <link rel="stylesheet" type="text/css" href="correxplorer.css">
 
@@ -30,7 +31,7 @@
 <body>
   <!-- <p>Examples: mutual_info.csv, size.csv, pcs_size.csv, diseases.csv, country_disease.csv (or load your own file - just use the full path, e.g. of a file shared via Dropbox).</p> -->
   <!-- <p>Click on a label to sort according to it. <a href="https://github.com/ondata/cb-eu-audit-matrix">Source on GitHub.</a></p> -->
-  <h1>Confiscati Bene EU - Audit matrix</h1>
+  <h1 data-i18n="header.title"></h1>
   <div id="viz_container"></div>
   <p>
 
@@ -58,11 +59,11 @@
   </p>
   <div class="tooltip" style="opacity: 0.01"></div>
   <p id="footer">
-    CC-BY <a href="http://www.confiscatibene.it" target="_blank">Confiscati Bene</a>, 
-    powered by <a href="https://github.com/ondata" target="_blank">Ondata</a>, 
-    developed by <a href="http://www.dataninja.it" target="_blank">Dataninja</a>, 
-    based on <a href="https://github.com/CompassInc/correlation-explorer" target="_blank">Compass' correlation explorer tool</a>,
-    source on <a href="https://github.com/ondata/cb-eu-audit-matrix" target="_blank">Github</a>.
+    <span data-i18n="footer.cc"></span> <a href="http://www.confiscatibene.it" target="_blank">Confiscati Bene</a>, 
+    <span data-i18n="footer.powered"></span> <a href="https://github.com/ondata" target="_blank">Ondata</a>, 
+    <span data-i18n="footer.developed"></span> <a href="http://www.dataninja.it" target="_blank">Dataninja</a>, 
+    <span data-i18n="footer.based"></span> <a href="https://github.com/CompassInc/correlation-explorer" target="_blank">Compass' correlation explorer tool</a>,
+    <span data-i18n="footer.source"></span> <a href="https://github.com/ondata/cb-eu-audit-matrix" target="_blank">Github</a>.
   </p>
 
   <!-- <p>Built with <a href="http://d3js.org/">d3.js</a>.</p> -->
