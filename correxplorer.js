@@ -75,7 +75,6 @@ window.onload=function(){
     d3.selectAll("[data-i18n]").text(function() {
       return t(d3.select(this).attr("data-i18n"));
     });
-  });
 
   d3.select("button#file_load").on("click", function() {
       load_all();
@@ -132,6 +131,7 @@ window.onload=function(){
   
   load_all();  // not to start with nothing
 
+  });
 };
 
 var main = function(corr, label_col, label_row){
@@ -146,7 +146,7 @@ var main = function(corr, label_col, label_row){
 
   var svg = container.append('svg')
     .attr('width', 700)
-    .attr('height', 800);
+    .attr('height', 765);
 
   // Autodetect symmetric tables
   d3.select("input#keep_symmetry")
@@ -198,6 +198,18 @@ var main = function(corr, label_col, label_row){
   var color = d3.scale.ordinal()
       .domain(["N","NA","Y"])
       .range(['#ef8a62','#f7f7f7','#67a9cf']);
+
+  d3.select("#legend_container").selectAll("span.legend_item")
+    .data(color.domain())
+    .enter()
+    .append("span")
+    .attr("class","legend_item")
+    .style("background-color", function(d) {
+      return color(d);
+    })
+    .text(function(d) {
+      return i18n.t("answers."+d);
+    });
 
   var scale = d3.scale.linear()
       .domain([0, d3.min([50, d3.max([label_col.length, label_row.length, 4])])])
@@ -296,7 +308,7 @@ var main = function(corr, label_col, label_row){
   var pixel_mouseover = function(d){
     tooltip.style("opacity", 0.8)
       .style("left", (d3.event.pageX + 15) + "px")
-      .style("top", (d3.event.pageY + 8) + "px")
+      .style("top", (d3.event.pageY - 50) + "px")
       .html(
         "<h2>"+i18n.t("countries."+label_row[d.i]) + "</h2>" + 
         "<p>"+i18n.t("questions."+label_col[d.j]+".long") + " " + "<b>"+i18n.t("answers."+d.val)+"</b></p>"
@@ -324,7 +336,7 @@ var main = function(corr, label_col, label_row){
     }
     tooltip.style("opacity", 0.8)
       .style("left", (d3.event.pageX + 15) + "px")
-      .style("top", (d3.event.pageY + 8) + "px")
+      .style("top", (d3.event.pageY - 150) + "px")
       .html(
         "<h2>"+(type === "row" ? i18n.t("countries."+d) : i18n.t("questions."+d+".long"))+"</h2>" + 
         "<p>" + res_list.join("<br>") + "</p>"
@@ -417,5 +429,4 @@ var main = function(corr, label_col, label_row){
       }
       return res;
   };
-
 };

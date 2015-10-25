@@ -1,6 +1,8 @@
 {
   "header": {
-    "title": "Confiscati Bene EU - Audit matrix"
+    "title": "Confiscati Bene EU - Audit matrix",
+    "subtitle": "An European investigation on crime and confiscated assets",
+    "description": "Hi, I'm an empty description..."
   },
   "questions": {
     "Law": {
@@ -50,6 +52,7 @@
     "NA": "Not Available"
   },
   "footer": {
+    "about": "Some text about team and investigation...",
     "cc": "CC-BY",
     "powered": "powered by",
     "developed": "developed by",

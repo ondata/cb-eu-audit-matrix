@@ -1,16 +1,20 @@
-.pixel:hover
-{ 
+body {
+  width: 720px;
+  margin: 10px;
+}
+
+.pixel:hover { 
   stroke: #000;
   stroke-width: 1px;
+  cursor: crosshair;
 }
-.tick:hover
-{ 
-  fill: #aaa;
-/* stroke: #000;  
-stroke-width: 1px;*/
+
+.tick:hover { 
+  text-decoration: underline;
+  cursor: help;
 }
-div.tooltip
-{
+
+div.tooltip {
 	position: absolute;
 	text-align: left;
 	padding: 8px;
@@ -21,3 +25,18 @@ div.tooltip
 	border-radius: 4px;
 	pointer-events: none;
 }
+
+#legend_container span {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+#about {
+  font-size: smaller;
+}
+
+#footer {
+  font-size: xx-small;
+}
+

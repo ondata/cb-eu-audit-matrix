@@ -22,9 +22,6 @@
     #file_load {
       display: none;
     }
-    #footer {
-      font-size: smaller;
-    }
   </style>
 </head>
 
@@ -32,6 +29,9 @@
   <!-- <p>Examples: mutual_info.csv, size.csv, pcs_size.csv, diseases.csv, country_disease.csv (or load your own file - just use the full path, e.g. of a file shared via Dropbox).</p> -->
   <!-- <p>Click on a label to sort according to it. <a href="https://github.com/ondata/cb-eu-audit-matrix">Source on GitHub.</a></p> -->
   <h1 data-i18n="header.title"></h1>
+  <h3 data-i18n="header.subtitle"></h3>
+  <p data-i18n="header.description"></p>
+  <p id="legend_container"></p>
   <div id="viz_container"></div>
   <p>
 
@@ -57,7 +57,7 @@
     <span id="zoom_control"><label for="zoom">Zoom?</label> <input type='text' id="zoom" value="1."></span>
 
   </p>
-  <div class="tooltip" style="opacity: 0.01"></div>
+  <p id="about" data-i18n="footer.about"></p>
   <p id="footer">
     <span data-i18n="footer.cc"></span> <a href="http://www.confiscatibene.it" target="_blank">Confiscati Bene</a>, 
     <span data-i18n="footer.powered"></span> <a href="https://github.com/ondata" target="_blank">Ondata</a>, 
@@ -67,6 +67,7 @@
   </p>
 
   <!-- <p>Built with <a href="http://d3js.org/">d3.js</a>.</p> -->
+  <div class="tooltip" style="opacity: 0.01"></div>
   
 </body>
 

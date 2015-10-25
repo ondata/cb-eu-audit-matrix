@@ -1,6 +1,8 @@
 {
   "header": {
-    "title": "Confiscati Bene UE - Matrice dell'audit"
+    "title": "Confiscati Bene UE - Matrice dell'audit",
+    "subtitle": "Un'inchiesta europea sul crimine organizzato e i beni confiscati",
+    "description": "Ehi, sono una descrizione vuota..."
   },
   "questions": {
     "Law": {
@@ -50,6 +52,7 @@
     "NA": "Non Disponibile"
   },
   "footer": {
+    "about": "Una nota sul team e l'inchiesta...",
     "cc": "CC-BY",
     "powered": "powered by",
     "developed": "developed by",
