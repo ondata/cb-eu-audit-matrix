@@ -69,7 +69,11 @@ var js_comparison_table = function () {
           rows: rows};
 };
 
-window.onload=function(){
+window.onload = function(){
+
+  if (window.location.href.indexOf("embed") > -1) {
+    d3.selectAll(".noembed").style("display","none");
+  }
 
   i18n.init(function(e,t) {
     d3.selectAll("[data-i18n]").html(function() {
