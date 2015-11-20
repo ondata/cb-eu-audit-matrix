@@ -72,7 +72,7 @@ var js_comparison_table = function () {
 window.onload=function(){
 
   i18n.init(function(e,t) {
-    d3.selectAll("[data-i18n]").text(function() {
+    d3.selectAll("[data-i18n]").html(function() {
       return t(d3.select(this).attr("data-i18n"));
     });
 
@@ -199,7 +199,11 @@ var main = function(corr, label_col, label_row){
       .domain(["N","NA","Y"])
       .range(['#ef8a62','#f7f7f7','#67a9cf']);
 
-  d3.select("#legend_container").selectAll("span.legend_item")
+  var icon = d3.scale.ordinal()
+      .domain(["N","NA","Y"])
+      .range(['times-circle','exclamation-circle','check-circle']);
+
+  d3.select("#legend_container").selectAll(".legend_item")
     .data(color.domain())
     .enter()
     .append("span")
@@ -250,7 +254,7 @@ var main = function(corr, label_col, label_row){
 
   });
 
-  var label_space_x = 125,
+  var label_space_x = 135,
       label_space_y = 150;
   // I will make it also a function of scale and max label length
 
@@ -306,12 +310,17 @@ var main = function(corr, label_col, label_row){
           //.on('click', function(d, i){reorder_matrix(i, 'row');});
 
   var pixel_mouseover = function(d){
-    tooltip.style("opacity", 0.8)
+    tooltip
+      .style("opacity", 0.8)
       .style("left", (d3.event.pageX + 15) + "px")
       .style("top", (d3.event.pageY - 50) + "px")
+      .style("border-right", "15px solid " + color(d.val))
+      .style("border-top", "15px solid " + color(d.val))
+      .style("max-width", null)
       .html(
-        "<h2>"+i18n.t("countries."+label_row[d.i]) + "</h2>" + 
-        "<p>"+i18n.t("questions."+label_col[d.j]+".long") + " " + "<b>"+i18n.t("answers."+d.val)+"</b></p>"
+        "<h3>"+i18n.t("countries."+label_row[d.i]) + "</h3>" + 
+        "<p>"+i18n.t("questions."+label_col[d.j]+".long") + ": " + '<b style="background-color:' + color(d.val) + '">'+i18n.t("answers."+d.val)+"</b></p>" +
+        '<i class="fa fa-' + icon(d.val) + '" style="color:' + color(d.val) + '"></i>'
       );
       //.html(d.i + ": " + label_row[d.i] + "<br>" + d.j + ": " + label_col[d.j] + "<br>" + "Value: " + (d.val > 0 ? "+" : "&nbsp;") + d.val.toFixed(3));
   };
@@ -334,11 +343,14 @@ var main = function(corr, label_col, label_row){
       }
       //res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + vec[indices[j]].toFixed(3) + "&nbsp;&nbsp;&nbsp;" + label[indices[j]]);
     }
-    tooltip.style("opacity", 0.8)
+    tooltip
+      .style("opacity", 0.8)
       .style("left", (d3.event.pageX + 15) + "px")
       .style("top", (d3.event.pageY - 150) + "px")
+      .style("border", "none")
+      .style("max-width", (type === "row" ? null : "250px"))
       .html(
-        "<h2>"+(type === "row" ? i18n.t("countries."+d) : i18n.t("questions."+d+".long"))+"</h2>" + 
+        "<h3>"+(type === "row" ? i18n.t("countries."+d) : i18n.t("questions."+d+".long"))+"</h3>" + 
         "<p>" + res_list.join("<br>") + "</p>"
       );
   };

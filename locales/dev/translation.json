@@ -1,8 +1,8 @@
 {
   "header": {
-    "title": "Confiscati Bene EU - Audit matrix",
-    "subtitle": "An European investigation on crime and confiscated assets",
-    "description": "Hi, I'm an empty description..."
+    "title": "Audit matrix",
+    "subtitle": "Confiscati Bene project, the European edition",
+    "description": "Following matrix shows the actual status of law of all European countries about the management of confiscated asset to organized crime."
   },
   "questions": {
     "Law": {
@@ -51,8 +51,11 @@
     "N": "No",
     "NA": "Not Available"
   },
+  "legend": {
+    "label": "Legend"
+  },
   "footer": {
-    "about": "Some text about team and investigation...",
+    "about": "Confiscati Bene is an European investigation about organized crime and confiscated assets. Official website: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
     "cc": "CC-BY",
     "powered": "powered by",
     "developed": "developed by",

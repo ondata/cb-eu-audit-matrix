@@ -1,0 +1,80 @@
+body {
+  font: normal 15px/21px Arial,'Helvetica Neue',Helvetica,sans-serif;
+  line-height: 21px;
+  width: 720px;
+  margin: 10px;
+}
+
+h1 {
+  font: 52px/44px 'FGDemiCondensed',Arial,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+h2 {
+  font: 18px/16px 'FGDemiCondensed',Arial,'Helvetica Neue',Helvetica,sans-serif;
+  color: #e10020;
+  text-transform: uppercase;
+  padding: 10px 10px 0 10px;
+}
+
+p {
+  font: 20px/24px 'FGBookCondensed',Arial,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+.pixel:hover { 
+  stroke: #000;
+  stroke-width: 1px;
+  cursor: crosshair;
+}
+
+.tick:hover { 
+  text-decoration: underline;
+  cursor: help;
+}
+
+div.tooltip {
+	position: absolute;
+	text-align: left;
+	padding: 8px;
+	font: 16px sans-serif;
+  line-height: 1.5em;
+	background: #000;
+  color: #ddd;
+	border: solid 1px #aaa;
+	border-radius: 4px;
+	pointer-events: none;
+}
+
+div.tooltip b {
+  color: black;
+  padding-right: 10px;
+  margin-right: -10px;
+  padding-left: 5px;
+}
+
+div.tooltip .fa {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  margin: 0.83em 0;
+  font-size: 1.5em;
+}
+
+#legend_container span {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+#legend_container .legend_label:after {
+  content: ":";
+}
+
+#about {
+  margin-top: 2em;
+}
+
+#footer {
+  font-size: xx-small;
+}
+

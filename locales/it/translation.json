@@ -1,8 +1,8 @@
 {
   "header": {
-    "title": "Confiscati Bene UE - Matrice dell'audit",
-    "subtitle": "Un'inchiesta europea sul crimine organizzato e i beni confiscati",
-    "description": "Ehi, sono una descrizione vuota..."
+    "title": "Matrice dell'audit",
+    "subtitle": "Progetto Confiscati Bene, edizione europea",
+    "description": "La matrice seguente mostra l'attuale situazione delle legislazioni dei paesi europei nella gestione dei beni confiscati alle mafie."
   },
   "questions": {
     "Law": {
@@ -51,8 +51,11 @@
     "N": "No",
     "NA": "Non Disponibile"
   },
+  "legend": {
+    "label": "Legenda"
+  },
   "footer": {
-    "about": "Una nota sul team e l'inchiesta...",
+    "about": "Confiscati Bene è un'inchiesta europea sul crimine organizzato e i beni confiscati alle mafie. Sito ufficiale: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
     "cc": "CC-BY",
     "powered": "powered by",
     "developed": "developed by",
