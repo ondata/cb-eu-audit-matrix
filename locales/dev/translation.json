@@ -1,0 +1,95 @@
+{
+  "header": {
+    "title": "Audit matrix",
+    "subtitle": "Confiscati Bene project, the European edition",
+    "description": "Following matrix shows the actual status of law of all European countries about the management of confiscated asset to organized crime. Last update: November 2015."
+  },
+  "questions": {
+    "Law": {
+      "long": "Is there a law on confiscation?",
+      "short": "Law"
+    },
+    "Management": {
+      "long": "Is there a law on Management of seized assets?",
+      "short": "Management"
+    },
+    "Conviction based": {
+      "long": "Confiscation based on criminal conviction",
+      "short": "Conviction based"
+    },
+    "Non-conviction based": {
+      "long": "Confiscation without criminal conviction",
+      "short": "Non-conviction based"
+    },
+    "Mutual recognition": {
+      "long": "Adhesion to the Council Framework decision 2006/783/JHA for the mutual recognition?",
+      "short": "Mutual recognition"
+    },
+    "Specialised agency": {
+      "long": "Centralised approach with specialised institution",
+      "short": "Specialised agency"
+    },
+    "Non-specialised agency": {
+      "long": "Centralised approach with non-specialised institutions",
+      "short": "Non-specialised agency"
+    },
+    "Decentralised approach": {
+      "long": "Decentralised approach",
+      "short": "Decentralised approach"
+    },
+    "Direct social re-use": {
+      "long": "Direct re-use for social purposes",
+      "short": "Direct social re-use"
+    },
+    "Re-use of proceeds": {
+      "long": "Re-use of proceeds for social purposes through funds and programs",
+      "short": "Re-use of proceeds"
+    }
+  },
+  "answers": {
+    "Y": "Yes",
+    "N": "No",
+    "NA": "Not Available"
+  },
+  "legend": {
+    "label": "Legend"
+  },
+  "footer": {
+    "about": "Confiscati Bene is an European investigation about organized crime and confiscated assets. Official website: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
+    "cc": "CC-BY",
+    "powered": "powered by",
+    "developed": "developed by",
+    "based": "based on",
+    "source": "source on"
+  },
+  "countries": {
+    "Austria": "Austria",
+    "Belgium": "Belgium",
+    "Bulgaria": "Bulgaria",
+    "Croatia": "Croatia",
+    "Cyprus": "Cyprus",
+    "Czech Republic": "Czech Republic",
+    "Denmark": "Denmark",
+    "Estonia": "Estonia",
+    "Finland": "Finland",
+    "France": "France",
+    "Germany": "Germany",
+    "Greece": "Greece",
+    "Hungary": "Hungary",
+    "Ireland": "Ireland",
+    "Italy": "Italy",
+    "Latvia": "Latvia",
+    "Lithuania": "Lithuania",
+    "Luxembourg": "Luxembourg",
+    "Malta": "Malta",
+    "Netherlands": "Netherlands",
+    "Poland": "Poland",
+    "Portugal": "Portugal",
+    "Romania": "Romania",
+    "Slovakia": "Slovakia",
+    "Slovenia": "Slovenia",
+    "Spain": "Spain",
+    "Sweden": "Sweden",
+    "United Kingdom": "United Kingdom"
+  }
+}

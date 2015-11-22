@@ -2,38 +2,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Correlation Explorer in D3.js</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <link rel="icon" href="favicon.gif" type="image/gif"/>
+  <title>Confiscati Bene EU - Audit matrix</title>
   
-  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
-  <script type='text/javascript' src="correxplorer.js"></script>
-  <link rel="stylesheet" type="text/css" href="correxplorer.css">
+  <script type='text/javascript' src='js/d3.min.js'></script>
+  <script type='text/javascript' src='js/i18next.min.js'></script>
+  <script type='text/javascript' src="js/correxplorer.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://www.repstatic.it/cless/channel/espresso/2014-v1/css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/correxplorer.css">
+
+  <style>
+    #simmetry_control,
+    #zoom_control,
+    #sort_control,
+    #transpose_control,
+    #file_control,
+    #file_load {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-  <p>
-    <input type="text" value="corr50.csv" id="file_path">
-    T?
-    <input type="checkbox" id="transpose">
-    <button id="file_load">Load CSV!</button>
-  
-    Sort by:
-    <select id="sort_func">
-      <option value="abs_value">by Absolute Value</option>
-      <option value="value">by Value</option>
-      <option value="similarity">by Similarity</option>
-      <option value="alphabetic">Alphabetic</option>
-      <option value="original">Original</option>
-    </select>
-
-    Keep symmetry?
-    <input type='checkbox' id="keep_symmetry" checked="true">
-    Zoom?
-    <input type='text' id="zoom" value="1.">
+  <!-- <p>Examples: mutual_info.csv, size.csv, pcs_size.csv, diseases.csv, country_disease.csv (or load your own file - just use the full path, e.g. of a file shared via Dropbox).</p> -->
+  <!-- <p>Click on a label to sort according to it. <a href="https://github.com/ondata/cb-eu-audit-matrix">Source on GitHub.</a></p> -->
+  <h2 class="noembed" data-i18n="header.subtitle"></h2>
+  <h1 class="noembed" data-i18n="header.title"></h1>
+  <p class="noembed" data-i18n="header.description"></p>
+  <div id="viz_container"></div>
+  <p id="legend_container">
+    <span class="legend_label" data-i18n="legend.label"></span>
   </p>
-  <div class="tooltip" style="opacity: 0.01"></div>
+  <p>
+
+    <span id="file_control"><label for="file_path">Data source:</label> <input type="text" value="cb-eu-audit-data.tsv" id="file_path" disabled></span>
+
+    <span id="transpose_control"><label for="transpose">Transpose?</label> <input type="checkbox" id="transpose"></span>
+
+    <button id="file_load">Refresh!</button>
+    <!-- <button id="js_comparison">or generate JS comparison table?</button> -->
+  
+    <span id="sort_control">
+      <label for="sort_func">Sort by:</label> 
+      <select id="sort_func">
+        <option value="abs_value">by Absolute Value</option>
+        <option value="value" selected="selected">by Value</option>
+        <option value="similarity">by Similarity</option>
+        <option value="alphabetic">Alphabetic</option>
+        <option value="original">Original</option>
+      </select>
+    </span>
+
+    <span id="simmetry_control"><label for="keep_symmetry">Keep symmetry?</label> <input type='checkbox' id="keep_symmetry" checked="true"></span>
+    <span id="zoom_control"><label for="zoom">Zoom?</label> <input type='text' id="zoom" value="1."></span>
+
+  </p>
+  <p id="about" class="noembed" data-i18n="footer.about"></p>
+  <p id="footer">
+    <span data-i18n="footer.cc"></span> <a href="http://www.confiscatibene.it" target="_blank">Confiscati Bene</a>, 
+    <span data-i18n="footer.powered"></span> <a href="https://github.com/ondata" target="_blank">onData</a>, 
+    <span data-i18n="footer.developed"></span> <a href="http://www.dataninja.it" target="_blank">Dataninja</a>, 
+    <span data-i18n="footer.based"></span> <a href="https://github.com/CompassInc/correlation-explorer" target="_blank">Compass' correlation explorer tool</a>,
+    <span data-i18n="footer.source"></span> <a href="https://github.com/ondata/cb-eu-audit-matrix" target="_blank">Github</a>.
+  </p>
 
   <!-- <p>Built with <a href="http://d3js.org/">d3.js</a>.</p> -->
+  <div class="tooltip" style="opacity: 0.01"></div>
   
 </body>
 

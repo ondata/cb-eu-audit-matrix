@@ -1,0 +1,28 @@
+{
+  "name": "audit-matrix",
+  "version": "0.1.0",
+  "authors": [
+    "Alessio Cimarelli <jenkin@dataninja.it>"
+  ],
+  "description": "Matrix visualization for Confiscati Bene European audit",
+  "main": "index.html",
+  "keywords": [
+    "mafia",
+    "dataninja",
+    "confiscatibene"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.confiscatibene.it",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.5",
+    "i18next": "~1.10.3",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
