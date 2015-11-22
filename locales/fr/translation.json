@@ -1,16 +1,15 @@
-
 {
   "header": {
     "title": "Matrice d'Audit",
     "subtitle": "Projet Confiscati Beni, l'édition européenne",
-    "description": "La matrice ci-dessous montre la situation actuelle des législations des pays européens dans la gestion des biens confisqués à les mafias. Dates mises à jour Novembre 2015. "."
+    "description": "La matrice ci-dessous montre la situation actuelle des législations des pays européens dans la gestion des biens confisqués à les mafias. Dates mises à jour Novembre 2015."
   },
-  “questions": {
+  "questions": {
     "Law": {
       "long": "Y a-t-il une loi sur la confiscation?",
       "short": "loi sur la confiscation des biens"
     },
-    “Management”: {
+    "Management": {
       "long": "Y a-t-il une loi sur les biens saisis?",
       "short": "Gestion des biens"
     },
@@ -22,11 +21,11 @@
       "long": "Confiscation possible sans condamnation",
       "short": "Confiscation sans condamnation"
     },
-    “Mutual recognition": {
+    "Mutual recognition": {
       "long": "Mise en œuvre de la décision-cadre 2006/783/JAI du Conseil sur la reconnaissance mutuelle aux décisions de confiscation?",
       "short": "Décision-cadre 2006"
     },
-    “Specialised agency": {
+    "Specialised agency": {
       "long": "Approche centralisée avec une institution spécialisée",
       "short": "Institution spécialisée"
     },
