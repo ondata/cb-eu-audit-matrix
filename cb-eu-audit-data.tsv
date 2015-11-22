@@ -8,7 +8,7 @@ Czech Republic	Y	Y	Y	N	Y	N	Y	N	Y	N
 Denmark	Y	N	Y	N	Y	N	N	Y	NA	NA
 Estonia	Y	Y	Y	N	N	N	N	Y	Y	N
 Finland	Y	Y	Y	N	Y	N	Y	N	NA	NA
-France	Y	Y	Y	N	Y	Y	N	N	N	Y
+France	Y	Y	Y	N	Y	Y	N	N	Y	Y
 Germany	Y	Y	Y	N	Y	N	N	Y	Y	N
 Greece	Y	Y	Y	Y	N	N	N	Y	Y	N
 Hungary	Y	Y	Y	Y	Y	N	N	Y	Y	N
@@ -20,10 +20,10 @@ Luxembourg	Y	N	Y	N	N	N	Y	N	N	Y
 Malta	Y	N	Y	N	Y	N	Y	N	NA	NA
 Netherlands	Y	Y	Y	N	Y	N	Y	N	NA	NA
 Poland	Y	Y	Y	N	Y	N	N	Y	NA	NA
-Portugal	Y	Y	Y	Y	Y	N	N	Y	Y	N
+Portugal	Y	Y	Y	N	Y	N	N	Y	Y	N
 Romania	Y	Y	Y	Y	Y	N	Y	N	Y	N
-Slovakia	Y	Y	Y	N	N	N	N	Y	Y	N
+Slovakia	Y	Y	Y	Y	N	N	N	Y	Y	N
 Slovenia	Y	Y	Y	Y	Y	N	N	Y	Y	N
 Spain	Y	Y	Y	N	Y	N	N	Y	N	Y
 Sweden	Y	Y	Y	N	Y	NA	NA	NA	Y	N
-United Kingdom	Y	Y	Y	Y	N	N	N	Y	N	Y
+United Kingdom	Y	Y	Y	Y	Y	N	N	Y	N	Y

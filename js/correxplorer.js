@@ -321,12 +321,12 @@ var main = function(corr, label_col, label_row){
       .style("border-right", "15px solid " + color(d.val))
       .style("border-top", "15px solid " + color(d.val))
       .style("max-width", null)
+      .classed("pixel",true)
       .html(
         "<h3>"+i18n.t("countries."+label_row[d.i]) + "</h3>" + 
         "<p>"+i18n.t("questions."+label_col[d.j]+".long") + ": " + '<b style="background-color:' + color(d.val) + '">'+i18n.t("answers."+d.val)+"</b></p>" +
         '<i class="fa fa-' + icon(d.val) + '" style="color:' + color(d.val) + '"></i>'
       );
-      //.html(d.i + ": " + label_row[d.i] + "<br>" + d.j + ": " + label_col[d.j] + "<br>" + "Value: " + (d.val > 0 ? "+" : "&nbsp;") + d.val.toFixed(3));
   };
 
   var mouseout = function(d){
@@ -339,13 +339,17 @@ var main = function(corr, label_col, label_row){
     // also value/abs val?
     indices.sort(function(a, b){ return Math.abs(vec[b]) - Math.abs(vec[a]); });
     res_list = [];
-    for(var j = 0; j < Math.min(vec.length, 10); j++) {
+    for(var j = 0; j < vec.length; j++) {
       if (type === "row") {
         res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + i18n.t("questions."+label[indices[j]]+".long") + "&nbsp;&nbsp;&nbsp;<b>" + i18n.t("answers."+vec[indices[j]])+"</b>");
       } else {
-        res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + i18n.t("countries."+label[indices[j]]) + "&nbsp;&nbsp;&nbsp;<b>" + i18n.t("answers."+vec[indices[j]])+"</b>");
+        if (vec[indices[j]] === 'Y') {
+          res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + i18n.t("countries."+label[indices[j]]) + "&nbsp;&nbsp;&nbsp;<b>" + i18n.t("answers."+vec[indices[j]])+"</b>");
+        }
       }
-      //res_list.push((vec[indices[j]] > 0 ? "+" : "&nbsp;") + vec[indices[j]].toFixed(3) + "&nbsp;&nbsp;&nbsp;" + label[indices[j]]);
+    }
+    if (type != "row") {
+      res_list.sort(d3.ascending);
     }
     tooltip
       .style("opacity", 0.8)
@@ -353,6 +357,7 @@ var main = function(corr, label_col, label_row){
       .style("top", (d3.event.pageY - 150) + "px")
       .style("border", "none")
       .style("max-width", (type === "row" ? null : "250px"))
+      .classed("pixel",false)
       .html(
         "<h3>"+(type === "row" ? i18n.t("countries."+d) : i18n.t("questions."+d+".long"))+"</h3>" + 
         "<p>" + res_list.join("<br>") + "</p>"
