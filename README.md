@@ -1,4 +1,4 @@
-Matrix viz for the audit of Confiscati Bene EU, v1.0.1
+Matrix viz for the audit of Confiscati Bene EU, v1.0.2
 
 Live version: http://ondata.github.io/cb-eu-audit-matrix/.
 

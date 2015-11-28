@@ -1,0 +1,29 @@
+/* Heading, Base Font */
+@font-face {
+  font-family: 'FGBookCondensed';
+  src: url('../fonts/itcfranklingothicstd-bkcd-webfont.eot');
+  src: url('../fonts/itcfranklingothicstd-bkcd-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/itcfranklingothicstd-bkcd-webfont.woff') format('woff'), url('../fonts/itcfranklingothicstd-bkcd-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FGMediumCondensed';
+  src: url('../fonts/itcfranklingothicstd-mdcd-webfont.eot');
+  src: url('../fonts/itcfranklingothicstd-mdcd-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/itcfranklingothicstd-mdcd-webfont.woff') format('woff'), url('../fonts/itcfranklingothicstd-mdcd-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FGDemiCondensed';
+  src: url('../fonts/itcfranklingothicstd-dmcd-webfont.eot');
+  src: url('../fonts/itcfranklingothicstd-dmcd-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/itcfranklingothicstd-dmcd-webfont.woff') format('woff'), url('../fonts/itcfranklingothicstd-dmcd-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'StymieExtraBold';
+  src: url('../fonts/stymie_extra_bold-webfont.eot');
+  src: url('../fonts/stymie_extra_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/stymie_extra_bold-webfont.woff') format('woff'), url('../fonts/stymie_extra_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
