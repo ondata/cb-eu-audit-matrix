@@ -2,60 +2,60 @@
   "header": {
     "title": "Matrix Prüfungs",
     "subtitle": "Projekt Confiscati Bene, European Edition",
-    "description": "Following matrix shows the actual status of law of all European countries about the management of confiscated asset to organized crime. Last update: November 2015. Source: <a href='http://flarenetwork.org/media/files/recast_report_1_disposal_laws_and_practices.pdf' target='_blank'>Disposal of confiscated assets in the EU Member States - Law and Practices</a> by the <a href='http://www.csd.bg/' target='_blank'>Center for the Study of Democracy</a>."
+    "description": "Folgende Matrix zeigt den aktuellen Status des Rechts aller europäischen Länder über die Verwaltung der beschlagnahmten Vermögens zur organisierten Kriminalität. Letzte Aktualisierung: November 2015. News Source: <a href='http://flarenetwork.org/media/files/recast_report_1_disposal_laws_and_practices.pdf' target='_blank'>Disposal of confiscated assets in the EU Member States - Law and Practices</a> für <a href='http://www.csd.bg/' target='_blank'>Center for the Study of Democracy</a>."
   },
   "questions": {
     "Law": {
-      "long": "Is there a law on confiscation?",
-      "short": "Law"
+      "long": "Gibt es ein Gesetz zur Einziehung?",
+      "short": "Recht"
     },
     "Management": {
-      "long": "Is there a law on management of seized assets?",
+      "long": "Gibt es ein Gesetz zur Verwendung beschlagnahmter Güter und Vermögen?",
       "short": "Management"
     },
     "Conviction based": {
-      "long": "Confiscation based on criminal conviction",
-      "short": "Conviction based"
+      "long": "Einziehung aufgrund Verurteilung wegen einer Straftat",
+      "short": "Überzeugung"
     },
     "Non-conviction based": {
-      "long": "Confiscation without criminal conviction",
-      "short": "Non-conviction based"
+      "long": "Einziehung ohne Verurteilung wegen einer Straftat",
+      "short": "Nicht Überzeugung"
     },
     "Mutual recognition": {
-      "long": "Implementation of the Council Framework decision 2006/783/JHA on the mutual recognition of confiscation orders?",
-      "short": "Mutual recognition"
+      "long": "Umsetzung des Rahmenbeschlusses 2006/783/JI des Rates über die gegenseitige Anerkennung auf Einziehungsentscheidungen",
+      "short": "Gegenseitige Anerkennung"
     },
     "Specialised agency": {
-      "long": "Centralised approach with specialised institution",
-      "short": "Specialised agency"
+      "long": "Zentraler Ansatz mit spezieller Institution",
+      "short": "Fachagentur"
     },
     "Non-specialised agency": {
-      "long": "Centralised approach with non-specialised institutions",
-      "short": "Non-specialised agency"
+      "long": "Zentraler Ansatz mit nicht-spezialisierten Institutionen",
+      "short": "Non-Sonderorganisation"
     },
     "Decentralised approach": {
-      "long": "Decentralised approach",
-      "short": "Decentralised approach"
+      "long": "Dezentraler Ansatz",
+      "short": "Dezentrale Ansatz"
     },
     "Direct social re-use": {
-      "long": "Direct re-use for social purposes",
-      "short": "Direct social re-use"
+      "long": "Direkte Wiederverwendung für soziale Zwecke",
+      "short": "Direkte soziale Wiederverwendung"
     },
     "Re-use of proceeds": {
-      "long": "Re-use of proceeds for social purposes through funds and programs",
-      "short": "Re-use of proceeds"
+      "long": "Wiederverwendung der Erlöse für soziale Zwecke über spezielle Töpfe und Programme",
+      "short": "Wieder Verwendung der Erlöse"
     }
   },
   "answers": {
-    "Y": "Yes",
-    "N": "No",
-    "NA": "Not Available"
+    "Y": "Ja",
+    "N": "Nein",
+    "NA": "Nicht Verfügbar"
   },
   "legend": {
-    "label": "Legend"
+    "label": "Legende"
   },
   "footer": {
-    "about": "Confiscati Bene is an European investigation about organized crime and confiscated assets. Official website: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
+    "about": "Confiscati Bene ist eine europäische Untersuchung über die organisierte Kriminalität und beschlagnahmten Vermögenswerte. Offizielle Website: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
     "cc": "CC-BY",
     "powered": "powered by",
     "developed": "developed by",
