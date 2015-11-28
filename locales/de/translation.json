@@ -1,0 +1,95 @@
+{
+  "header": {
+    "title": "Matrix Prüfungs",
+    "subtitle": "Projekt Confiscati Bene, European Edition",
+    "description": "Folgende Matrix zeigt den aktuellen Status des Rechts aller europäischen Länder über die Verwaltung der beschlagnahmten Vermögens zur organisierten Kriminalität. Letzte Aktualisierung: November 2015. News Source: <a href='http://flarenetwork.org/media/files/recast_report_1_disposal_laws_and_practices.pdf' target='_blank'>Disposal of confiscated assets in the EU Member States - Law and Practices</a> für <a href='http://www.csd.bg/' target='_blank'>Center for the Study of Democracy</a>."
+  },
+  "questions": {
+    "Law": {
+      "long": "Gibt es ein Gesetz zur Einziehung?",
+      "short": "Recht"
+    },
+    "Management": {
+      "long": "Gibt es ein Gesetz zur Verwendung beschlagnahmter Güter und Vermögen?",
+      "short": "Management"
+    },
+    "Conviction based": {
+      "long": "Einziehung aufgrund Verurteilung wegen einer Straftat",
+      "short": "Überzeugung"
+    },
+    "Non-conviction based": {
+      "long": "Einziehung ohne Verurteilung wegen einer Straftat",
+      "short": "Nicht Überzeugung"
+    },
+    "Mutual recognition": {
+      "long": "Umsetzung des Rahmenbeschlusses 2006/783/JI des Rates über die gegenseitige Anerkennung auf Einziehungsentscheidungen",
+      "short": "Gegenseitige Anerkennung"
+    },
+    "Specialised agency": {
+      "long": "Zentraler Ansatz mit spezieller Institution",
+      "short": "Fachagentur"
+    },
+    "Non-specialised agency": {
+      "long": "Zentraler Ansatz mit nicht-spezialisierten Institutionen",
+      "short": "Non-Sonderorganisation"
+    },
+    "Decentralised approach": {
+      "long": "Dezentraler Ansatz",
+      "short": "Dezentrale Ansatz"
+    },
+    "Direct social re-use": {
+      "long": "Direkte Wiederverwendung für soziale Zwecke",
+      "short": "Direkte soziale Wiederverwendung"
+    },
+    "Re-use of proceeds": {
+      "long": "Wiederverwendung der Erlöse für soziale Zwecke über spezielle Töpfe und Programme",
+      "short": "Wieder Verwendung der Erlöse"
+    }
+  },
+  "answers": {
+    "Y": "Ja",
+    "N": "Nein",
+    "NA": "Nicht Verfügbar"
+  },
+  "legend": {
+    "label": "Legende"
+  },
+  "footer": {
+    "about": "Confiscati Bene ist eine europäische Untersuchung über die organisierte Kriminalität und beschlagnahmten Vermögenswerte. Offizielle Website: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
+    "cc": "CC-BY",
+    "powered": "powered by",
+    "developed": "developed by",
+    "based": "based on",
+    "source": "source on"
+  },
+  "countries": {
+    "Austria": "Österreich",
+    "Belgium": "Belgien",
+    "Bulgaria": "Bulgarien",
+    "Croatia": "Kroatien",
+    "Cyprus": "Zypern",
+    "Czech Republic": "Tschechische Republik",
+    "Denmark": "Dänemark",
+    "Estonia": "Estland",
+    "Finland": "Finnland",
+    "France": "Frankreich",
+    "Germany": "Deutschland",
+    "Greece": "Griechenland",
+    "Hungary": "Ungarn",
+    "Ireland": "Irland",
+    "Italy": "Italien",
+    "Latvia": "Lettland",
+    "Lithuania": "Litauen",
+    "Luxembourg": "Luxemburg",
+    "Malta": "Mörtel",
+    "Netherlands": "Holland",
+    "Poland": "Polen",
+    "Portugal": "Portugal",
+    "Romania": "Rumänien",
+    "Slovakia": "Slowakei",
+    "Slovenia": "Slowenien",
+    "Spain": "Spanien",
+    "Sweden": "Schweden",
+    "United Kingdom": "Vereinigtes Königreich"
+  }
+}

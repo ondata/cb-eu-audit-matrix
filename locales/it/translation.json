@@ -2,11 +2,11 @@
   "header": {
     "title": "Matrice dell'audit",
     "subtitle": "Progetto Confiscati Bene, edizione europea",
-    "description": "La matrice seguente mostra l'attuale situazione delle legislazioni dei paesi europei nella gestione dei beni confiscati alle mafie. Dati aggiornati al novembre 2015."
+    "description": "La matrice seguente mostra l'attuale situazione delle legislazioni dei paesi europei nella gestione dei beni confiscati alle mafie. Dati aggiornati al novembre 2015. Fonte: <a href='http://flarenetwork.org/media/files/recast_report_1_disposal_laws_and_practices.pdf' target='_blank'>Disposal of confiscated assets in the EU Member States - Law and Practices</a> del <a href='http://www.csd.bg/' target='_blank'>Centro Studi sulla Democrazia</a>."
   },
   "questions": {
     "Law": {
-      "long": "C'è una legge sulle confische?",
+      "long": "Esiste una legge sulle confische?",
       "short": "Legge sulle confische"
     },
     "Management": {
@@ -14,7 +14,7 @@
       "short": "Gestione dei beni"
     },
     "Conviction based": {
-      "long": "Confisca basata solo su una condanna definitiva",
+      "long": "Confisca basata su una condanna penale",
       "short": "Confisca con condanna"
     },
     "Non-conviction based": {

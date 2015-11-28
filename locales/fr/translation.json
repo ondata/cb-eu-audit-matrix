@@ -1,0 +1,95 @@
+{
+  "header": {
+    "title": "Matrice d'Audit",
+    "subtitle": "Projet Confiscati Beni, l'édition européenne",
+    "description": "La matrice ci-dessous montre la situation actuelle des législations des pays européens dans la gestion des biens confisqués à les mafias. Dates mises à jour Novembre 2015."
+  },
+  "questions": {
+    "Law": {
+      "long": "Y a-t-il une loi sur la confiscation?",
+      "short": "loi sur la confiscation des biens"
+    },
+    "Management": {
+      "long": "Y a-t-il une loi sur les biens saisis?",
+      "short": "Gestion des biens"
+    },
+    "Conviction based": {
+      "long": "Confiscation basée sur une condamnation pénale",
+      "short": "Confiscation avec condamnation"
+    },
+    "Non-conviction based": {
+      "long": "Confiscation possible sans condamnation",
+      "short": "Confiscation sans condamnation"
+    },
+    "Mutual recognition": {
+      "long": "Mise en œuvre de la décision-cadre 2006/783/JAI du Conseil sur la reconnaissance mutuelle aux décisions de confiscation?",
+      "short": "Décision-cadre 2006"
+    },
+    "Specialised agency": {
+      "long": "Approche centralisée avec une institution spécialisée",
+      "short": "Institution spécialisée"
+    },
+    "Non-specialised agency": {
+      "long": "Approche centralisée sans une institution spécialisée",
+      "short": "Institution non spécialisée"
+    },
+    "Decentralised approach": {
+      "long": "Approche décentralisée",
+      "short": "Approche décentralisée"
+    },
+    "Direct social re-use": {
+      "long": "Utilisation directe à des fins sociales",
+      "short": "Utilization social directe"
+    },
+    "Re-use of proceeds": {
+      "long": "Réutilisation des fonds pour des fins sociales à travers des programmes de financement",
+      "short": "Utilization des fonds"
+    }
+  },
+  "answers": {
+    "Y": "Oui",
+    "N": "Non",
+    "NA": "Indisponible"
+  },
+  "legend": {
+    "label": "Légende"
+  },
+  "footer": {
+    "about": "Confiscati Bene est une enquête européenne sur la criminalité organisée et les biens confisqués. Site officiel: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
+    "cc": "CC-BY",
+    "powered": "powered by",
+    "developed": "developed by",
+    "based": "based on",
+    "source": "source on"
+  },
+  "countries": {
+    "Austria": "Autriche",
+    "Belgium": "Belgique",
+    "Bulgaria": "Bulgarie",
+    "Croatia": "Croatie",
+    "Cyprus": "Chypre",
+    "Czech Republic": "République Tchèque",
+    "Denmark": "Danemark",
+    "Estonia": "Estonie",
+    "Finland": "Finlande",
+    "France": "France",
+    "Germany": "Allemagne",
+    "Greece": "Grèce",
+    "Hungary": "Hongrie",
+    "Ireland": "Irlande",
+    "Italy": "Italie",
+    "Latvia": "Lettonie",
+    "Lithuania": "Lituanie",
+    "Luxembourg": "Luxembourg",
+    "Malta": "Malte",
+    "Netherlands": "Hollande",
+    "Poland": "Pologne",
+    "Portugal": "Portugal",
+    "Romania": "Roumanie",
+    "Slovakia": "Slovaquie",
+    "Slovenia": "Slovénie",
+    "Spain": "Espagne",
+    "Sweden": "Suède",
+    "United Kingdom": "Royaume-Uni"
+  }
+}

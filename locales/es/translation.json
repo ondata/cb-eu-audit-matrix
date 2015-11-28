@@ -1,0 +1,95 @@
+{
+  "header": {
+    "title": "Auditoría Matrix",
+    "subtitle": "Confiscati Bene proyecto, la edición europea",
+    "description": "Siguiente matriz muestra el estado actual de la legislación de todos los países europeos sobre la gestión de los activos confiscados a la delincuencia organizada. Ultima actualización: Noviembre 2015. Fuente: <a href='http://flarenetwork.org/media/files/recast_report_1_disposal_laws_and_practices.pdf' target='_blank'>Disposal of confiscated assets in the EU Member States - Law and Practices</a> de <a href='http://www.csd.bg/' target='_blank'>Center for the Study of Democracy</a>."
+  },
+  "questions": {
+    "Law": {
+      "long": "¿Existe una ley sobre la confiscación de bienes? ",
+      "short": "Ley"
+    },
+    "Management": {
+      "long": "¿Existe una ley sobre los bienes decomisados?",
+      "short": "Administración"
+    },
+    "Conviction based": {
+      "long": "Confiscación basada en una condena penal",
+      "short": "Basado convicción"
+    },
+    "Non-conviction based": {
+      "long": "Confiscación posible también si no hay condena",
+      "short": "En ausencia de condena"
+    },
+    "Mutual recognition": {
+      "long": "Adopción de la Decisión Marco 2006/783/JHA sobre el cumplimento recíproco de las órdenes de confiscación",
+      "short": "Reconocimiento mutuo"
+    },
+    "Specialised agency": {
+      "long": "Enfoque centralizado desde una institución específica",
+      "short": "Agencia especializada"
+    },
+    "Non-specialised agency": {
+      "long": "Enfoque centralizado pero sin una institución específica",
+      "short": "Agencia no especializado"
+    },
+    "Decentralised approach": {
+      "long": "Enfoque descentralizado",
+      "short": "Enfoque descentralizado"
+    },
+    "Direct social re-use": {
+      "long": "Reutilización de los bienes para fines sociales",
+      "short": "Reutilización social directa"
+    },
+    "Re-use of proceeds": {
+      "long": "Reutilización de los bienes para fines sociales tras concursos públicos y programas de financiación",
+      "short": "Reutilizar del producto"
+    }
+  },
+  "answers": {
+    "Y": "Sí",
+    "N": "No",
+    "NA": "No Disponible"
+  },
+  "legend": {
+    "label": "Leyenda"
+  },
+  "footer": {
+    "about": "Confiscati Bene es una investigación europea sobre el crimen organizado y los bienes confiscados. Página web oficial: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
+    "cc": "CC-BY",
+    "powered": "powered by",
+    "developed": "developed by",
+    "based": "based on",
+    "source": "source on"
+  },
+  "countries": {
+    "Austria": "Austria",
+    "Belgium": "Bélgica",
+    "Bulgaria": "Bulgaria",
+    "Croatia": "Croacia",
+    "Cyprus": "Chipre",
+    "Czech Republic": "República Checa",
+    "Denmark": "Dinamarca",
+    "Estonia": "Estonia",
+    "Finland": "Finlandia",
+    "France": "Francia",
+    "Germany": "Alemania",
+    "Greece": "Grecia",
+    "Hungary": "Hungría",
+    "Ireland": "Irlanda",
+    "Italy": "Italia",
+    "Latvia": "Letonia",
+    "Lithuania": "Lituania",
+    "Luxembourg": "Luxemburgo",
+    "Malta": "Malta",
+    "Netherlands": "Países Bajos",
+    "Poland": "Polonia",
+    "Portugal": "Portugal",
+    "Romania": "Rumania",
+    "Slovakia": "Eslovaquia",
+    "Slovenia": "Eslovenia",
+    "Spain": "España",
+    "Sweden": "Suecia",
+    "United Kingdom": "Reino Unido"
+  }
+}
