@@ -1,61 +1,61 @@
 {
   "header": {
-    "title": "Audit matrix",
-    "subtitle": "Confiscati Bene project, the European edition",
-    "description": "Following matrix shows the actual status of law of all European countries about the management of confiscated asset to organized crime. Last update: November 2015. Source: <a href='http://flarenetwork.org/media/files/recast_report_1_disposal_laws_and_practices.pdf' target='_blank'>Disposal of confiscated assets in the EU Member States - Law and Practices</a> by the <a href='http://www.csd.bg/' target='_blank'>Center for the Study of Democracy</a>."
+    "title": "Auditoría Matrix",
+    "subtitle": "Confiscati Bene proyecto, la edición europea",
+    "description": "Siguiente matriz muestra el estado actual de la legislación de todos los países europeos sobre la gestión de los activos confiscados a la delincuencia organizada. Ultima actualización: Noviembre 2015. Fuente: <a href='http://flarenetwork.org/media/files/recast_report_1_disposal_laws_and_practices.pdf' target='_blank'>Disposal of confiscated assets in the EU Member States - Law and Practices</a> de <a href='http://www.csd.bg/' target='_blank'>Center for the Study of Democracy</a>."
   },
   "questions": {
     "Law": {
-      "long": "Is there a law on confiscation?",
-      "short": "Law"
+      "long": "¿Existe una ley sobre la confiscación de bienes? ",
+      "short": "Ley"
     },
     "Management": {
-      "long": "Is there a law on management of seized assets?",
-      "short": "Management"
+      "long": "¿Existe una ley sobre los bienes decomisados?",
+      "short": "Administración"
     },
     "Conviction based": {
-      "long": "Confiscation based on criminal conviction",
-      "short": "Conviction based"
+      "long": "Confiscación basada en una condena penal",
+      "short": "Basado convicción"
     },
     "Non-conviction based": {
-      "long": "Confiscation without criminal conviction",
-      "short": "Non-conviction based"
+      "long": "Confiscación posible también si no hay condena",
+      "short": "En ausencia de condena"
     },
     "Mutual recognition": {
-      "long": "Implementation of the Council Framework decision 2006/783/JHA on the mutual recognition of confiscation orders?",
-      "short": "Mutual recognition"
+      "long": "Adopción de la Decisión Marco 2006/783/JHA sobre el cumplimento recíproco de las órdenes de confiscación",
+      "short": "Reconocimiento mutuo"
     },
     "Specialised agency": {
-      "long": "Centralised approach with specialised institution",
-      "short": "Specialised agency"
+      "long": "Enfoque centralizado desde una institución específica",
+      "short": "Agencia especializada"
     },
     "Non-specialised agency": {
-      "long": "Centralised approach with non-specialised institutions",
-      "short": "Non-specialised agency"
+      "long": "Enfoque centralizado pero sin una institución específica",
+      "short": "Agencia no especializado"
     },
     "Decentralised approach": {
-      "long": "Decentralised approach",
-      "short": "Decentralised approach"
+      "long": "Enfoque descentralizado",
+      "short": "Enfoque descentralizado"
     },
     "Direct social re-use": {
-      "long": "Direct re-use for social purposes",
-      "short": "Direct social re-use"
+      "long": "Reutilización de los bienes para fines sociales",
+      "short": "Reutilización social directa"
     },
     "Re-use of proceeds": {
-      "long": "Re-use of proceeds for social purposes through funds and programs",
-      "short": "Re-use of proceeds"
+      "long": "Reutilización de los bienes para fines sociales tras concursos públicos y programas de financiación",
+      "short": "Reutilizar del producto"
     }
   },
   "answers": {
-    "Y": "Yes",
+    "Y": "Sí",
     "N": "No",
-    "NA": "Not Available"
+    "NA": "No Disponible"
   },
   "legend": {
-    "label": "Legend"
+    "label": "Leyenda"
   },
   "footer": {
-    "about": "Confiscati Bene is an European investigation about organized crime and confiscated assets. Official website: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
+    "about": "Confiscati Bene es una investigación europea sobre el crimen organizado y los bienes confiscados. Página web oficial: <a href='http://www.confiscatibene.it/' target='_blank'>confiscatibene.it</a>.",
     "cc": "CC-BY",
     "powered": "powered by",
     "developed": "developed by",
@@ -64,32 +64,32 @@
   },
   "countries": {
     "Austria": "Austria",
-    "Belgium": "Belgium",
+    "Belgium": "Bélgica",
     "Bulgaria": "Bulgaria",
-    "Croatia": "Croatia",
-    "Cyprus": "Cyprus",
-    "Czech Republic": "Czech Republic",
-    "Denmark": "Denmark",
+    "Croatia": "Croacia",
+    "Cyprus": "Chipre",
+    "Czech Republic": "República Checa",
+    "Denmark": "Dinamarca",
     "Estonia": "Estonia",
-    "Finland": "Finland",
-    "France": "France",
-    "Germany": "Germany",
-    "Greece": "Greece",
-    "Hungary": "Hungary",
-    "Ireland": "Ireland",
-    "Italy": "Italy",
-    "Latvia": "Latvia",
-    "Lithuania": "Lithuania",
-    "Luxembourg": "Luxembourg",
+    "Finland": "Finlandia",
+    "France": "Francia",
+    "Germany": "Alemania",
+    "Greece": "Grecia",
+    "Hungary": "Hungría",
+    "Ireland": "Irlanda",
+    "Italy": "Italia",
+    "Latvia": "Letonia",
+    "Lithuania": "Lituania",
+    "Luxembourg": "Luxemburgo",
     "Malta": "Malta",
-    "Netherlands": "Netherlands",
-    "Poland": "Poland",
+    "Netherlands": "Países Bajos",
+    "Poland": "Polonia",
     "Portugal": "Portugal",
-    "Romania": "Romania",
-    "Slovakia": "Slovakia",
-    "Slovenia": "Slovenia",
-    "Spain": "Spain",
-    "Sweden": "Sweden",
-    "United Kingdom": "United Kingdom"
+    "Romania": "Rumania",
+    "Slovakia": "Eslovaquia",
+    "Slovenia": "Eslovenia",
+    "Spain": "España",
+    "Sweden": "Suecia",
+    "United Kingdom": "Reino Unido"
   }
 }
