@@ -7,49 +7,49 @@
   "questions": {
     "Law": {
       "long": "Gibt es ein Gesetz zur Einziehung?",
-      "short": "Recht"
+      "short": "Gesetz"
     },
     "Management": {
       "long": "Gibt es ein Gesetz zur Verwendung beschlagnahmter Güter und Vermögen?",
-      "short": "Management"
+      "short": "Verwendung geregelt"
     },
     "Conviction based": {
       "long": "Einziehung aufgrund Verurteilung wegen einer Straftat",
-      "short": "Überzeugung"
+      "short": "Einziehung mit Strafverfahren"
     },
     "Non-conviction based": {
       "long": "Einziehung ohne Verurteilung wegen einer Straftat",
-      "short": "Nicht Überzeugung"
+      "short": "Einziehung ohne Strafverfahren"
     },
     "Mutual recognition": {
       "long": "Umsetzung des Rahmenbeschlusses 2006/783/JI des Rates über die gegenseitige Anerkennung auf Einziehungsentscheidungen",
-      "short": "Gegenseitige Anerkennung"
+      "short": "EU-Regelung umgesetzt"
     },
     "Specialised agency": {
       "long": "Zentraler Ansatz mit spezieller Institution",
-      "short": "Fachagentur"
+      "short": "Eigene Behörde"
     },
     "Non-specialised agency": {
       "long": "Zentraler Ansatz mit nicht-spezialisierten Institutionen",
-      "short": "Non-Sonderorganisation"
+      "short": "Keine eigene Behörde"
     },
     "Decentralised approach": {
-      "long": "Dezentraler Ansatz",
-      "short": "Dezentrale Ansatz"
+      "long": "Eingezogene Gelder fließen in den jeweiligen Landeshaushalt",
+      "short": "Dezentraler Ansatz"
     },
     "Direct social re-use": {
       "long": "Direkte Wiederverwendung für soziale Zwecke",
-      "short": "Direkte soziale Wiederverwendung"
+      "short": "Soziale Zweckbindung"
     },
     "Re-use of proceeds": {
-      "long": "Wiederverwendung der Erlöse für soziale Zwecke über spezielle Töpfe und Programme",
-      "short": "Wieder Verwendung der Erlöse"
+      "long": "Zweckbindung für spezielle Programme",
+      "short": "Zweckbindung"
     }
   },
   "answers": {
     "Y": "Ja",
     "N": "Nein",
-    "NA": "Nicht Verfügbar"
+    "NA": "Nicht verfügbar"
   },
   "legend": {
     "label": "Legende"
@@ -70,7 +70,7 @@
     "Bulgaria": "Bulgarien",
     "Croatia": "Kroatien",
     "Cyprus": "Zypern",
-    "Czech Republic": "Tschechische Republik",
+    "Czech Republic": "Tschechien",
     "Denmark": "Dänemark",
     "Estonia": "Estland",
     "Finland": "Finnland",
@@ -83,8 +83,8 @@
     "Latvia": "Lettland",
     "Lithuania": "Litauen",
     "Luxembourg": "Luxemburg",
-    "Malta": "Mörtel",
-    "Netherlands": "Holland",
+    "Malta": "Malta",
+    "Netherlands": "Niederlande",
     "Poland": "Polen",
     "Portugal": "Portugal",
     "Romania": "Rumänien",
@@ -92,6 +92,6 @@
     "Slovenia": "Slowenien",
     "Spain": "Spanien",
     "Sweden": "Schweden",
-    "United Kingdom": "Vereinigtes Königreich"
+    "United Kingdom": "Großbritannien"
   }
 }
